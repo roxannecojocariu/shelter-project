@@ -1,4 +1,4 @@
 class Shelter <ApplicationRecord
-  has_one :User
+  has_many :users
   validates :name, :slug, :address, presence: true
 end
